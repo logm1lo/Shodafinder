@@ -1,8 +1,9 @@
+
 ![Shodafinder](https://github.com/user-attachments/assets/10619533-b61a-4246-b169-efc75f1d5e9b)
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) ![GitHub last commit](https://img.shields.io/github/last-commit/logm1lo/Shodafinder) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/logm1lo/Shodafinder/total) ![GitHub License](https://img.shields.io/github/license/logm1lo/Shodafinder) 
 
-```Shodafinder``` is a simple Python script to compute the Shodan hash for a website's favicon
+**Shodafinder** is a simple Python script to compute the Shodan hash for a website's favicon.
 
 ![carbon](https://github.com/user-attachments/assets/0a146587-4b76-462c-ba7b-177df5365544)
 
@@ -21,6 +22,16 @@
 - `favicon` library
 
 ## Installation
+
+### Install from PyPI
+
+You can install `Shodafinder` directly from [PyPI](https://pypi.org/project/shodafinder/) using `pip`:
+
+```sh
+pip install shodafinder
+```
+
+### Manual Installation
 
 1. Clone this repository:
 
@@ -42,15 +53,21 @@
 
 ## Usage
 
-1. Run the script:
+After installing, you can run `Shodafinder` from the command line:
 
-    ```sh
-    python get_favicon_hash.py
-    ```
+```sh
+shodafinder
+```
 
-2. Enter a URL when prompted. Ensure the URL includes a schema (e.g., `http://` or `https://`).
+Or manually run the Python script:
 
-3. The script will fetch the favicon, compute its hash, and display results with links to search in Shodan and ZoomEye.
+```sh
+python get_favicon_hash.py
+```
+
+1. Enter a URL when prompted. Ensure the URL includes a schema (e.g., `http://` or `https://`).
+
+2. The script will fetch the favicon, compute its hash, and display results with links to search in Shodan and ZoomEye.
 
 ## Example
 
@@ -72,17 +89,20 @@ Use this on ZoomEye for searching, iconhash:"1234567890"
     or press here: https://www.zoomeye.org/searchResult?q=iconhash%3A%20%221234567890%22
 ```
 
-
 ## How to Contribute
-  1. Clone repo and create a new branch: ```$ git checkout https://github.com/logm1lo/Shodafinder -b name_for_new_branch```.
-  2. Make changes and test
-  3. Submit Pull Request with comprehensive description of changes
+1. Clone the repo and create a new branch:
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+    ```sh
+    git checkout https://github.com/logm1lo/Shodafinder -b name_for_new_branch
+    ```
+
+2. Make changes and test.
+
+3. Submit a Pull Request with a comprehensive description of changes.
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
 
 ## License
 
